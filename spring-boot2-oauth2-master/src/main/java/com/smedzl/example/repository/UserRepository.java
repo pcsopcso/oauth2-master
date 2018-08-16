@@ -1,17 +1,10 @@
 package com.smedzl.example.repository;
 
-import java.util.Optional;
-
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import com.smedzl.example.model.User;
 
-@Repository
+@RepositoryRestResource(path = "users", collectionResourceRel = "users")
 public interface UserRepository extends JpaRepository<User, Long> {
-
 	User findOneByUsername(String username);
-
-	@Override
-	Optional<User> findById(Long id);
 }

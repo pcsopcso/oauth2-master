@@ -53,6 +53,11 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
 
 	@Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
+		
+		BCryptPasswordEncoder bcr = new BCryptPasswordEncoder();
+		String result = bcr.encode("test");  
+		System.out.println("암호 === " + result);
+		//"$2a$10$Yi7rQ5lpVxNyWPxQXN75vOZeEwFU1pST0Wel3YghW/fsxupFeiKyy"
 		clients.jdbc(dataSource);
 	}
 
