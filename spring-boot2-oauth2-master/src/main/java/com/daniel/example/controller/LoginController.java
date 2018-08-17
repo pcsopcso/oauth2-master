@@ -1,4 +1,4 @@
-package com.smedzl.example.controller;
+package com.daniel.example.controller;
 
 import org.springframework.security.authentication.AnonymousAuthenticationToken;
 import org.springframework.security.core.Authentication;

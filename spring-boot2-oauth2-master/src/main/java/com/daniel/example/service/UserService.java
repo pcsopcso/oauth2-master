@@ -1,10 +1,10 @@
-package com.smedzl.example.service;
+package com.daniel.example.service;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 
-import com.smedzl.example.repository.UserRepository;
+import com.daniel.example.repository.UserRepository;
 
 @Service("userDetailsService")
 public class UserService implements UserDetailsService {

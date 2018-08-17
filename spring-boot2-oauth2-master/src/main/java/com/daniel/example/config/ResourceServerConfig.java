@@ -1,4 +1,4 @@
-package com.smedzl.example.config;
+package com.daniel.example.config;
 
 import javax.sql.DataSource;
 

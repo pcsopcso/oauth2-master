@@ -1,4 +1,4 @@
-package com.smedzl.example.model;
+package com.daniel.example.model;
 
 import java.util.ArrayList;
 import java.util.Collection;
