@@ -6,7 +6,8 @@ DROP TABLE IF EXISTS users;
 CREATE TABLE users (
     user_id BIGINT PRIMARY KEY auto_increment NOT NULL,
     username VARCHAR(128) UNIQUE NOT NULL,
-    password VARCHAR(256)
+    password VARCHAR(256),
+    name VARCHAR(256)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 /**

@@ -16,7 +16,10 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
@@ -46,9 +49,13 @@ public class User implements UserDetails {
 
   @Column(name = "password", nullable = false)
   private String password;
-
+  
+  @Column(name = "name", nullable = false)
+  private String name;
  
-
+  public String getName() {
+    return this.name;
+  }
   // User Details
 
   @Override
